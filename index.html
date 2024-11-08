@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MX32PEE2ML"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MX32PEE2ML');
+</script>
+				
+<!-- Start Open Web Analytics Tracker -->
+<script type="text/javascript">
+    //<![CDATA[
+    var owa_baseUrl = 'https://owa.joeyq.tech/';
+    var owa_cmds = owa_cmds || [];
+    owa_cmds.push(['setSiteId', '349917a6d8ae1f87bec778fc717e8fe0']);
+    owa_cmds.push(['trackPageView']);
+    owa_cmds.push(['trackClicks']);
+    owa_cmds.push(['trackDomStream']);
+    
+    (function() {
+        var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+        owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+        _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+        var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+    }());
+    //]]>
+    </script>
+    <!-- End Open Web Analytics Code -->
+                    
+            
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kali Linux</title>
+    <link rel="stylesheet" href="Css/landing.css">
+    <script src="https://kit.fontawesome.com/c4096f9892.js" crossorigin="anonymous"></script>
+
+<!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//matomo.joeyq.tech/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '6']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+  <script defer data-domain="sudo-su.tech" src="https://plausible.joeyq.tech/js/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
+</head>
+
+<body>
+
+    <div class="kl">
+        <div class="navbar">
+
+            <div class="dropdown">
+                <a class="nav-text left-text hlog">Applications <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <p onclick="abtMe()">About Me</p>
+                    <p onclick="Terminalon()">Terminal</p>
+                    <p onclick="linkedin()">Linkedin</p>
+                    <p onclick="github()">Github</p>
+                    <p onclick="contact()">Contact Me</p>
+                    <p onclick="credits()">Credits</p>
+                </div>
+            </div>
+            <p id='date' class="center-text" align=center></p>
+
+            <a class="nav-text right-text hlogg"><i class="fas fa-comment-alt"></i> guest</a>
+            <a class="nav-text right-text"><i class="fas fa-network-wired" style="color:lightblue;"></i></a>
+        </div>
+    </div>
+
+
+    <div class="login">
+
+        <div class="signin">
+            <div class="txt">
+                <p class="tx" id="welcomeText1">
+
+                </p>
+                <p class="txtt" id="welcomeText">
+
+                </p>
+            </div>
+            <div></div>
+            <div class='ll'>
+                <p>Username:</p>
+                <input type="text" onkeydown="loginAuth()">
+                <p id='nn'>Invalid Username, use username:guest(username is case sensitive)</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="body">
+
+        <div class="left-nav">
+            <p onclick="abtMe()"><img class="left-nav-item" src="Assets/avatar.png"></p>
+            <p onclick="Terminalonn()"><img class="left-nav-item" src="Assets/Untitled.png"></p>
+            <p onclick="linkedin()"><img class="left-nav-item" src="Assets/linkedin.png"></p>
+            <p onclick="github()"><img class="left-nav-item" src="Assets/github.png"></p>
+            <p onclick="contact()"><img class="left-nav-item" src="Assets/contactme.svg"></p>
+            <p onclick="credits()"><img class="left-nav-item" src="Assets/credits.png"></p>
+
+
+
+            </p>
+        </div>
+        <div id="ter">
+
+            <div id='fakeMenu'>
+                <p class="name" style="cursor: default;">guest@user: ~
+                </p>
+                <i class="fas fa-times-circle fa-1x icons" id="cl"></i>
+                <i class="far fa-square icons fa-1x min" id="max"></i>
+                <i class="fas fa-window-minimize fa-1x icons" id="min"></i>
+
+            </div>
+            <div id='fakeMenu2'>
+                <p class='fmic' onclick="comm('ls',true)">files</p>
+                <p class='fmic' onclick="comm('clear',true)">clear</p>
+                <p class='fmic' onclick="comm('help',true)">help</p>
+
+            </div>
+
+            <div class="terminal" onclick="foc()">
+                <div class="black">
+                    <div id="history">
+
+                    </div>
+                    <div class="line">
+                        <span id="path">guest@user:~$</span>
+                        <input type="text" id="input" onkeydown="comm()" autocomplete="off" autocorrect="off"
+                            data-gramm_editor="false" spellcheck="false">
+                        </line>
+                    </div>
+                </div>
+
+            </div>
+            <button onfocus="foc()"></button>
+        </div>
+    </div>
+    <script src="Js/landing.js"></script>
+</body>
+
+</html>
