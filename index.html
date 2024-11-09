@@ -11,28 +11,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-MX32PEE2ML');
-</script>
-				
-<!-- Start Open Web Analytics Tracker -->
-<script type="text/javascript">
-    //<![CDATA[
-    var owa_baseUrl = 'https://owa.joeyq.tech/';
-    var owa_cmds = owa_cmds || [];
-    owa_cmds.push(['setSiteId', '349917a6d8ae1f87bec778fc717e8fe0']);
-    owa_cmds.push(['trackPageView']);
-    owa_cmds.push(['trackClicks']);
-    owa_cmds.push(['trackDomStream']);
-    
-    (function() {
-        var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
-        owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
-        _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
-        var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
-    }());
-    //]]>
-    </script>
-    <!-- End Open Web Analytics Code -->
-                    
+</script>    
             
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,21 +21,24 @@
 
 <!-- Matomo -->
 <script>
-    var _paq = window._paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//matomo.joeyq.tech/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '6']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <!-- End Matomo Code -->
-  <script defer data-domain="sudo-su.tech" src="https://plausible.joeyq.tech/js/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js"></script>
-<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.sudo-su.tech"]);
+  _paq.push(["setDomains", ["*.sudo-su.tech","*.www.sudo-su.tech"]]);
+  _paq.push(["enableCrossDomainLinking"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//matomo.joeyq.tech/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '5']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="//matomo.joeyq.tech/matomo.php?idsite=5&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
 
 </head>
 
